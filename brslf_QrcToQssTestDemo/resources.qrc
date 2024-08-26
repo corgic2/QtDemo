@@ -1,4 +1,7 @@
 <RCC>
     <qresource prefix="/QssFiles"/>
     <qresource prefix="/images"/>
+    <qresource prefix="/">
+        <file>Resources/qssSettings/MyLineEdit.qss</file>
+    </qresource>
 </RCC>

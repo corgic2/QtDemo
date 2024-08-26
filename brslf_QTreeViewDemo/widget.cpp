@@ -13,7 +13,8 @@ Widget::Widget(QWidget *parent) :
     m_treeView = ui->treeView;
     m_treeView->header()->setSectionResizeMode(QHeaderView::ResizeToContents);
     m_treeView->setEditTriggers(QTreeView::NoEditTriggers);
-
+//    m_treeView->setTextElideMode(Qt::ElideRight);
+//    m_treeView->setToolTip();
     m_brush = QBrush(Qt::red);
 
     m_model = new QStandardItemModel;
@@ -21,9 +22,12 @@ Widget::Widget(QWidget *parent) :
 
     {
     QStandardItem *rootItem = new QStandardItem("root Item");
+    rootItem->setIcon(QIcon(":/images/center3.png"));
     m_model->appendRow(rootItem);
     QStandardItem* child1 = new QStandardItem("Child 1");
     QStandardItem* child2 = new QStandardItem("Child 2");
+    child1->setIcon(QIcon(":/images/center3.png"));
+    child2->setIcon(QIcon(":/images/center3.png"));
     rootItem->appendRow(child1);
     rootItem->appendRow(child2);
     m_font = rootItem->font();
@@ -40,6 +44,11 @@ Widget::Widget(QWidget *parent) :
     }
     child1->appendRow(list);
     child2->appendRow(CreateItem("2-1-123"));
+//    child2->appendRow(CreateItem("2-1-12311111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"));
+    }
+    for(int column = 0;column<m_model->columnCount();++column)
+    {
+        m_treeView->setColumnWidth(column,400);
     }
 
     m_treeView->setModel(m_model);

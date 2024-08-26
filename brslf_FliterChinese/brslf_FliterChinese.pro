@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2024-08-20T10:07:08
+# Project created by QtCreator 2024-08-26T10:42:41
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = brslf_QTreeViewDemo
+TARGET = brslf_FliterChinese
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -28,12 +28,10 @@ SOURCES += \
         widget.cpp
 
 HEADERS += \
-        widget.h \
-    Header Files/myqtreeviewdemo.h \
-    Header Files/myqtreeviewdemo.h
+        widget.h
 
 FORMS += \
         widget.ui
 
-RESOURCES += \
-    resourcesfiles.qrc
+DISTFILES += \
+    codeText.txt

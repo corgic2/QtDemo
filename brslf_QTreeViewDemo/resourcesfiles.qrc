@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/" lang="Chinese"/>
+    <qresource prefix="/images">
+        <file>center3.png</file>
+    </qresource>
+    <qresource prefix="/qssSettings"/>
+</RCC>
