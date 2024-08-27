@@ -233,10 +233,11 @@ void Widget::CreateMoziFile()
 
     //可能需要修改的路径
     {
+        QString filepath = "Component/MTCompenent/" + m_module + "/Resources/" + m_module + ".qrc";
+        QList<QStandardItem*> list;
         //1.qrc
         {
-            QString filepath = "Component/MTCompenent/" + m_module + "/Resources/" + m_module + ".qrc";
-            QList<QStandardItem*> list;
+
             list.append(CreateItem(m_module + ".qrc",0));
             list.append(CreateItem(filepath));
             dirChoice->appendRow(list);
@@ -249,8 +250,8 @@ void Widget::CreateMoziFile()
         }
         //2.MTApiRtStructOperations.h
         {
-            QString filepath = "Component/MTScript/" + m_scriptModule + "/ExportHeaderFile/" + m_scriptModule + ".h";
-            QList<QStandardItem*> list;
+            filepath = "Component/MTScript/" + m_scriptModule + "/ExportHeaderFile/" + m_scriptModule + ".h";
+            list.clear();
             list.append(CreateItem(m_scriptModule + ".h",0));
             list.append(CreateItem(filepath));
             dirChoice->appendRow(list);
@@ -269,8 +270,8 @@ void Widget::CreateMoziFile()
         }
         //3. NmoduleTargetDelineatPA
         {
-            QString filepath = "ModulePA/" + m_modulePA + "/Interaction/NModuleTADCptInteract.h";
-            QList<QStandardItem*> list;
+            filepath = "ModulePA/" + m_modulePA + "/Interaction/NModuleTADCptInteract.h";
+            list.clear();
             list.append(CreateItem("NModuleTADCptInteract.h",0));
             list.append(CreateItem(filepath));
             dirChoice->appendRow(list);
@@ -323,31 +324,31 @@ void Widget::CreateMoziFile()
         }
         //4. Creator
         {
-            QString filepath = "ModulePA/MModuleMOZIPA/MModuleInit/MModuleCptCreatorInit.cpp";
-            QList<QStandardItem*>list;
+            filepath = "ModulePA/MModuleMOZIPA/MModuleInit/MModuleCptCreatorInit.cpp";
+            list.clear();
             list.append(CreateItem("MModuleCptCreatorInit.cpp",0));
             list.append(CreateItem(filepath));
             dirChoice->appendRow(list);
         }
         //5. cmakeList
         {
-            QList<QStandardItem*>list;
+            list.clear();
             list.append(CreateItem("CMakeLists.txt",0));
             list.append(CreateItem(m_filepath));
             dirChoice->appendRow(list);
         }
         //6. ApiOpt_ROIBuild.h
         {
-            QString filepath = "Component/MTComDataDefine/MTApiCommonData/ExportHeaderFile/ApiRtStructData/ApiOpt_ROIBuild.h";
-            QList<QStandardItem*>list;
+            filepath = "Component/MTComDataDefine/MTApiCommonData/ExportHeaderFile/ApiRtStructData/ApiOpt_ROIBuild.h";
+            list.clear();
             list.append(CreateItem("ApiOpt_ROIBuild.h",0));
             list.append(CreateItem(filepath));
             dirChoice->appendRow(list);
         }
         //7. ApiOpt_ROIBuild_PyModule.cpp
         {
-            QString filepath = "Component/MTScript/MTApiRtStructOperations/source/ApiOpt_ROIBuild_PyModule.cpp";
-            QList<QStandardItem*>list;
+            filepath = "Component/MTScript/MTApiRtStructOperations/source/ApiOpt_ROIBuild_PyModule.cpp";
+            list.clear();
             list.append(CreateItem("ApiOpt_ROIBuild_PyModule.cpp",0));
             list.append(CreateItem(filepath));
             dirChoice->appendRow(list);
