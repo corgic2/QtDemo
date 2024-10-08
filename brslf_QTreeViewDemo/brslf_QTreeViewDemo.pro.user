@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.5.0, 2024-08-26T10:21:01. -->
+<!-- Written by QtCreator 4.5.0, 2024-10-08T11:47:34. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -285,8 +285,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">brslf_QTreeViewDemo</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">brslf_QTreeViewDemo2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:E:/lf_documents/lf_project/WorkSpace/QtDemo/brslf_QTreeViewDemo/brslf_QTreeViewDemo.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:E:/lf_documents/lf_project/E__WorkSpace/MyQtWorkSpace/QtDemo/brslf_QTreeViewDemo/brslf_QTreeViewDemo.pro</value>
     <value type="bool" key="QmakeProjectManager.QmakeRunConfiguration.UseLibrarySearchPath">true</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">brslf_QTreeViewDemo.pro</value>
